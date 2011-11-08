@@ -21,12 +21,6 @@ class AppKernel extends Kernel
             new Symfony\Bundle\DoctrineMongoDBBundle\DoctrineMongoDBBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-
-            new Application\UserBundle\UserBundle(),
-            new Application\DefaultBundle\DefaultBundle(),
-            new Vespolina\CoreBundle\VespolinaCoreBundle(),
-            new Vespolina\ProductBundle\VespolinaProductBundle(),
-            new Vespolina\DocumentBundle\VespolinaDocumentBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
